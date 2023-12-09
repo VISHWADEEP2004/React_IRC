@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+        <form class="container shadow" onsubmit="Login()" >
+            <h3>Login</h3>
+        <input type="text" name="" id="name" placeholder="User Name" class="name-input">
+        <input type="password" name="" id="pass" placeholder="Password" class="name-input">
+        <input type="submit" value="Login" class ="button-input">
+        </form>
+    
+    
+    <script>
+        function Login(){
+           let x = document.getElementById("name").value;
+           let m1 = document.getElementById("pass").value;
+           let m2 = "123";
+           if(m1==m2){
+            alert("Loged In !");
+           }
+           else{
+            alert("Login failed");
+           }
+            
+        }
+       
+    </script>
+</body>
+</html>

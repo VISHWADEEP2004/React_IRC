@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+        <form class="container shadow" onsubmit="register()" >
+        <h3>Registration form</h3>
+        <input type="text" name="" id="names" placeholder="Name" class="name-input">
+        <input type="number" name="" id="Age" placeholder="Age" class="name-input">
+        <input type="email" name="" id="Email" placeholder="Email" class="name-input">
+        <input type="password" name="" id="pass1" placeholder="Password" class="name-input">
+        <input type="password" name="" id="pass2" placeholder="Confirm Password" class="name-input">
+        <input type="number" name="" id="Mobile Number" placeholder="Phone" class="name-input">
+        <input type="submit" value="SUBMIT" class="button-input"> 
+        </form>
+    
+    
+    <script>
+        function register(){
+            let a = document.getElementById("pass1").value;
+            let b = document.getElementById("pass2").value;
+            if(confirm("Sure ?"))
+            {
+                if(a==b){
+                    alert("PASSWORD MATCHED");
+                }
+                else{
+                    alert("INCORRECT PASSWORD");
+                }
+            }
+            else{
+                alert("failed");
+            }
+            
+        }
+       
+    </script>
+</body>
+</html>
