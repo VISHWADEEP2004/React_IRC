@@ -1,10 +1,11 @@
 import './Asserts/Css/Style.css'
+import './Asserts/Css/Nav.css'
 import Nav from './Components/Nav'
 function App(){
     return(
         <div>
             <Nav/>
-            <form class="container shadow" onSubmit="register()" >
+            <form className="container shadow" onSubmit="register()">
         <h3>Registration form</h3>
         <input type="text" name="" id="names" placeholder="Name" className="name-input"/>
         <input type="number" name="" id="Age" placeholder="Age" className="name-input"/>

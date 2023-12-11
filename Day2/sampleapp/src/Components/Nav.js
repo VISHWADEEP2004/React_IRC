@@ -1,6 +1,7 @@
+
 function Nav(){
     return(
-            <nav class="navbar">
+        <nav class="navbar">
         <h1 clss="logo">THE WORLD OF CARZ</h1>
         <ul>
             <li><a href="day1.html">REGISTER</a></li>
@@ -10,8 +11,7 @@ function Nav(){
 
         </ul>
     </nav>
-    
-
+        
     )
 }
 export default Nav

@@ -1,0 +1,53 @@
+body{
+    background-image: url("https://assets.materialup.com/uploads/4cf973aa-a0a3-4fc2-88a5-3e8736de43e3/preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home{
+    background: #ef32d9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    height: 100hv;
+    width: 100wv;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    overflow:hidden;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+ul{
+    list-style-type: none;
+    font-size: 1rem;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+.home h1{
+    margin: 0px;
+    color: #f0e6f0;
+    padding-left: 6rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.home li{
+    float: right;
+}
+.home a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 40px;
+    text-align: center;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.home a:hover{
+    background-color: #c150b7;
+}

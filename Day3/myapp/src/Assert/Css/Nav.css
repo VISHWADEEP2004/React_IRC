@@ -1,0 +1,15 @@
+.navbar{
+    height: 100hv;
+    width: 100vw;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    top: 1rem;
+    margin: 0;
+}
+
+
+
