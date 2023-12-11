@@ -1,14 +1,17 @@
 body{
-    background-image: url("https://assets.materialup.com/uploads/4cf973aa-a0a3-4fc2-88a5-3e8736de43e3/preview.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #ADA996;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 .home{
-    background: #ef32d9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
+
 
     height: 100hv;
     width: 100wv;
@@ -17,9 +20,9 @@ body{
     margin: 0px;
     display: flex;
     overflow:hidden;
-    justify-content: space-between;
     text-decoration: none;
     list-style: none;
+    justify-content: space-between;
     
 }
 
@@ -32,10 +35,10 @@ ul{
 }
 .home h1{
     margin: 0px;
-    color: #f0e6f0;
+    color: #f5eff1;
     padding-left: 6rem;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Montserrat';
 }
 .home li{
     float: right;
@@ -46,8 +49,111 @@ ul{
     padding: 40px;
     text-align: center;
     font-size: large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Roboto';
 }
 .home a:hover{
-    background-color: #c150b7;
+    background: #bdc3c7;
+}
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+.div{
+    
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  padding: 1em;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+/* Flipping Card Styles */
+.flip {
+  position: relative;
+  display: inline-block;
+  margin-right: 200px; 
+  > .front,
+  > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+    transition-duration: .5s;
+    transition-property: transform, opacity;
+    gap: 1rem;
+  }
+  > .front {
+    transform: rotateY(0deg);
+  }
+  > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+  }
+  &:hover {
+    > .front {
+      transform: rotateY(180deg);
+    }
+    > .back {
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
+  }
+  &.flip-vertical {
+    > .back {
+      transform: rotateX(-180deg);
+    }
+    &:hover {
+      > .front {
+        transform: rotateX(180deg);
+      }
+      > .back {
+        transform: rotateX(0deg);
+      }
+    }
+  }
+}
+
+/* Custom Flipping Card Styles */
+.flip {
+  position: relative;
+  display: inline-block;
+  margin-right: 2px;
+  margin-bottom: 1em;
+  width: 400px;
+  > .front,
+  > .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 220px;
+    padding: 1em 2em;  
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-radius: 10px;
+    p {
+      font-size: 0.9125rem;
+      line-height: 160%;
+      color: #999;
+    }
+  }
+}
+
+/* Text Shadow Styles */
+.text-shadow {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
 }
