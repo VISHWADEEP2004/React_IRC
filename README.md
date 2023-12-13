@@ -2,7 +2,7 @@
 
 ## Register Page
 
-<figure><img src=".gitbook/assets/Screenshot 2023-12-13 142528.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/VISHWADEEP2004/React_IRC/blob/main/cc1/Home.png" alt=""><figcaption></figcaption></figure>
 
 ## Login Page
 
