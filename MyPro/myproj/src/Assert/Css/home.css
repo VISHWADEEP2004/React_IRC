@@ -3,9 +3,9 @@ body, h1, h2, h3, ul, li, p {
     padding: 0;
 }
 
-/* Global styles */
 body {
     font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
 header {
@@ -25,25 +25,28 @@ h2{
 text-align: center;
 color: #fff;
 font-size: 50px;
+font-family: 'Georgia';
 }
 
 
 
 .pet-card {
     border: 1px solid #2d1010;
+    background-color: #fff;
     border-radius: 5px;
     padding: 50px;
     margin-bottom: 20px;
     width: 300px;
     display: flex;
+    gap: 10px;
     align-items: center;
-    flex-direction: column; /* Changed from 'row' to 'column' */
+    flex-direction: column;
 
-}
+} 
 
 .pet-card img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -58,4 +61,18 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+.pet-card button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    width: 100px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pet-card button:hover {
+    background-color: #45a049;
 }

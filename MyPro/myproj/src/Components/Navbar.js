@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <div className="bb">
             <nav className="navbar">
-                <h1 className="logo">PET ADOPTION CENTER</h1>
+                <h1 className="logo">Give Love a Home: Adopt a Pet Companion!</h1>
                 <ul>
                     <li>
                         <Link to='/register' className="nav-link">
