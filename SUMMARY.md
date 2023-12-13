@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Page](README.md)
+* [CC1 React IRC](README.md)
