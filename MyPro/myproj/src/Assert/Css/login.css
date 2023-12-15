@@ -13,15 +13,11 @@
     gap: 1rem;
     margin-top: 138px;
     margin-left: 33rem;
-    background: #f46b45;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    /* margin: 20px auto 0; */
+    background-color: white; 
 } 
 
 .container1 h3{
-    color: #FFFDE4;
+    color:black;
     font-size: 2rem;
 }
 .name-input1
@@ -41,11 +37,8 @@ background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, F
 }
 .button-input1
 {
-    background: #FF5F6D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-   width: 80%;
+    background-color: #45a049;
+   width: 90%;
    padding: 1rem;
    border: none;
    border-bottom: 2px solid trans;

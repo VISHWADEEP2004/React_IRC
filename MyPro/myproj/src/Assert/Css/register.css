@@ -10,9 +10,7 @@
     border-radius: 5px;
     gap: 1rem;
     margin: 20px auto 0;
-    background: #f46b45; 
-    background: -webkit-linear-gradient(to right, #eea849, #f46b45); 
-    background: linear-gradient(to right, #eea849, #f46b45); 
+    background-color: white; 
     
 }
 .name-input2
@@ -32,10 +30,8 @@
 }
 .button-input2
 {
-    background: #FF5F6D; 
-    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);
-    background: linear-gradient(to right, #FFC371, #FF5F6D); 
-   width: 80%;
+    background-color: #45a049;
+     width: 80%;
    padding: 1rem;
    border: none;
    border-bottom: 2px solid trans;
