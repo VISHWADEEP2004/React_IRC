@@ -1,4 +1,11 @@
+body{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
 
+} 
 .navbar{
     display: flex;
     justify-content: flex-start;
@@ -6,21 +13,17 @@
     flex-direction: row;
     width: 100vw;
   height: 4rem;
-  background: #f46b45;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background-color:white;
     list-style-type: none;
     padding: 0px;
     margin: 0px;
-    background-color: aquamarine;
     overflow:hidden;
     text-decoration: none;
     list-style: none;
     
 }
 .navbar .nav-link {
-    color: aliceblue;
+    color: rgb(11, 11, 11);
     text-decoration: none;
     padding: 20px;
     text-align: center;
@@ -33,7 +36,7 @@
     padding: 4rem;
     margin: 0;
     text-align: center;
-    color: #f1f2f4;
+    color: #0d0e0f;
     font-family: 'Georgia';
    
 }
@@ -44,20 +47,16 @@
     font-family: 'Georgia';
 }
 
-
-.navbar a:hover{
-    background-color: rgb(32, 42, 186);
-}
 .navbar li{
     float: right;
 }
 
 .navbar .nav-link:hover {
-    background-color: rgb(223, 97, 12);
+    border-bottom: 3px solid rebeccapurple;
 }
 footer {
     background: #f46b45;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkirgb(144, 126, 227)t(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     text-align: center;

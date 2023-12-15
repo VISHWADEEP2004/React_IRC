@@ -1,11 +1,12 @@
-
+body{
+    background-color: lightblue;
+}
 .container1 {
     display:flex;
     justify-content: center;
     align-items: center;
     height:50vh;
     width:30vw;
-    background-color:rgb(243, 242, 242);
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
@@ -13,7 +14,7 @@
     gap: 1rem;
     margin-top: 138px;
     margin-left: 33rem;
-    background-color: white; 
+    
 } 
 
 .container1 h3{
