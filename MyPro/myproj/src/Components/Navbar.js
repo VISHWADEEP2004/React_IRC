@@ -23,7 +23,7 @@ function Navbar({ isDashboardVisible, toggleDashboard }) {
             )}
           </span>
         </p>
-        <ul>
+        <ul clasName='un-li'>
           <li>
             <Link to="/register" className="nav-link">
               REGISTER
