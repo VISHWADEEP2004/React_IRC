@@ -1,4 +1,4 @@
-body, h1, h2, h3, ul, li, p {
+/* body, h1, h2, h3, ul, li, p {
     margin: 0;
     padding: 0;
 }
@@ -23,7 +23,7 @@ header {
 }
 h2{
 text-align: center;
-color: #fff;
+color: purple;
 font-size: 50px;
 font-family: 'Georgia';
 }
@@ -75,4 +75,4 @@ footer {
 
 .pet-card button:hover {
     background-color: #45a049;
-}
+} */
