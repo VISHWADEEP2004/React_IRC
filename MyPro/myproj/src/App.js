@@ -6,6 +6,7 @@ import Home from "./Components/Home";
 import Signup from "./Components/Signup";
 import {Route,Routes} from 'react-router-dom';
 import AdminDashboard from "./Components/AdminDashboard";
+import Dogadap from "./Components/Dogadap";
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
       <Route path='/register' element={<Register/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/dashboard' element={<AdminDashboard/>}/>
+      <Route path='/dogadap' element={<Dogadap/>}/>
     </Routes>
     
 

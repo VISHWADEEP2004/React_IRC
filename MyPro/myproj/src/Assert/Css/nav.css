@@ -38,7 +38,7 @@ body{
     padding: 10px;
     text-align: center;
     font-size: 1.3rem;
-    font-family: 'Source Code Pro', monospace;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
    
 }
 .navbar ul{
@@ -54,7 +54,7 @@ body{
 
 .navbar .nav-link:hover {
     text-decoration: underline;
-    color: #fff;
+    color: orange;
 }
 
 footer {

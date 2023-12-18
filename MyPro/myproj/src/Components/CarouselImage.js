@@ -2,7 +2,7 @@
 import React from 'react';
 
 const CarouselImage = ({ src, alt }) => {
-  return <img src={src} alt={alt} style={{ width: '100vw', height: '90vh' }} />;
+  return <img src={src} alt={alt} style={{ width: '70vw', height: '70vh' }} />;
 };
 
 export default CarouselImage;
