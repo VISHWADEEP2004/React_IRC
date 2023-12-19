@@ -1,5 +1,5 @@
 import React from 'react';
-import img1 from '../Assert/img/img1.jpg';
+import petcat from '../Assert/img/petcat.jpg';
 import img2 from '../Assert/img/img2.jpg';
 import img3 from '../Assert/img/img3.jpg';
 import { Carousel } from 'react-bootstrap';
@@ -29,7 +29,7 @@ const MyCarousel = () => {
     <div style={carouselContainerStyle}>
       <Carousel interval={2000} nextIcon={<span style={arrowStyles}>&gt;</span>} prevIcon={<span style={arrowStyles}>&lt;</span>}>
         <Carousel.Item>
-          <CarouselImage src={img1} alt="First Image" />
+          <CarouselImage src={petcat} alt="First Image" />
         </Carousel.Item>
         <Carousel.Item>
           <CarouselImage src={img2} alt="Second Image" />

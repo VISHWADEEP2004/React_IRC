@@ -16,23 +16,23 @@
     border-radius: 5px;
     gap: 1rem;
     margin-top: 16px;
-    background-color: white;
+    background-color:#0a4870;
 } 
 
 .container3 h3{
-    color:black;
+    color:white;
     font-size: 2rem;
 }
 .name-input3
 {
     width: 70%;
     padding: 1rem;
-    border: 2x solid purple;
+    border: 2x solid #0a4870;
     font-weight:100;
 }
 .button-input3
 {
-    background-color:purple;
+    background-color:white;
    width: 80%;
    padding: 0.6rem;
    border: none;
@@ -40,11 +40,11 @@
    outline: none;
    border-radius: 5rem;
    font-weight:100;
-   color: white;
+   color: #0a4870;
 }
 
 .signup{
-    color: purple;
+    color: white;
     text-decoration:underline;
 }
 .shadow3

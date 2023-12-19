@@ -1,11 +1,15 @@
-// Navbar.jsx
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Assert/Css/nav.css';
 import dog from '../Assert/img/dog.gif';
+import { useTheme } from './Themecontest';
 
 function Navbar({ isDashboardVisible, toggleDashboard }) {
+  const {theme,toggleTheme}=useTheme();
+
+  const handleThemeToggle = () => {
+    toggleTheme();
+  };
   return (
     <div className="bb">
       <nav className="navbar">

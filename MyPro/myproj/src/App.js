@@ -5,12 +5,17 @@ import Register from "./Components/Register";
 import Home from "./Components/Home";
 import Signup from "./Components/Signup";
 import {Route,Routes} from 'react-router-dom';
-import AdminDashboard from "./Components/AdminDashboard";
+import Catadap from "./Components/Catadap";
+import Pets from "./Components/Pets";
+import Dashboard from "./Components/Dashboard";
 import Dogadap from "./Components/Dogadap";
+import { ThemeProvider } from "./Components/Themecontest";
 function App() {
   return (
     <>
-    <NavBar/>
+      <ThemeProvider> {/* Use ThemeProvider instead of ThemProvider */}
+        <NavBar />
+      </ThemeProvider>
     {/* <AdminDashboard/> */}
     <Routes>
     <Route path='/' element={<Home/>}/>
@@ -18,8 +23,10 @@ function App() {
       <Route path='/login' element={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
       <Route path='/signup' element={<Signup/>}/>
-      <Route path='/dashboard' element={<AdminDashboard/>}/>
+      {/* <Route path='/dashboard' element={<Dashboard/>}/> */}
       <Route path='/dogadap' element={<Dogadap/>}/>
+      <Route path='/catadap' element={<Catadap/>}/>
+      <Route path='/pets' element={<Pets/>}/>
     </Routes>
     
 

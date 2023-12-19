@@ -15,23 +15,23 @@
     border-radius: 5px;
     gap: 1rem;
     margin-top: 16px;
-    background-color: white;
+    background-color:#0a4870;
 } 
 
 .container2 h3{
-    color:black;
+    color:white;
     font-size: 2rem;
 }
 .name-input2
 {
     width: 70%;
     padding: 1rem;
-    border: 2x solid purple;
+    border: 2x solid #0a4870;
     font-weight:100;
 }
 .button-input2
 {
-    background-color:purple;
+    background-color:#0a4870;
    width: 80%;
    padding: 0.6rem;
    border: none;
@@ -43,7 +43,7 @@
 }
 
 .signup{
-    color: purple;
+    color: #0a4870;
     text-decoration:underline;
 }
 .catimg{
@@ -62,7 +62,7 @@
 ;
 }
 .cancel-link2{
-    color: purple;
+    color: #0a4870;
     text-decoration: none;
     font-size: 1.5rem;
     margin-top: -50px;
