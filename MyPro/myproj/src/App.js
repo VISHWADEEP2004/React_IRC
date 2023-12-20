@@ -9,24 +9,23 @@ import Catadap from "./Components/Catadap";
 import Pets from "./Components/Pets";
 import Dashboard from "./Components/Dashboard";
 import Dogadap from "./Components/Dogadap";
-import { ThemeProvider } from "./Components/Themecontest";
+import AddPet from "./Components/Addpet";
+import Sidebar from "./Components/Sidebar";
 function App() {
   return (
     <>
-      <ThemeProvider> {/* Use ThemeProvider instead of ThemProvider */}
         <NavBar />
-      </ThemeProvider>
-    {/* <AdminDashboard/> */}
+        {/* <Sidebar/> */}
     <Routes>
     <Route path='/' element={<Home/>}/>
-      {/* <Route path='/register' element={<About/>}/>   */}
       <Route path='/login' element={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
       <Route path='/signup' element={<Signup/>}/>
-      {/* <Route path='/dashboard' element={<Dashboard/>}/> */}
-      <Route path='/dogadap' element={<Dogadap/>}/>
-      <Route path='/catadap' element={<Catadap/>}/>
+      <Route path="/dashboard" component={Dashboard} />
+      <Route path='/dogadop' element={<Dogadap/>}/>
+      <Route path='/catadop' element={<Catadap/>}/>
       <Route path='/pets' element={<Pets/>}/>
+      <Route path='/add' element={<AddPet />} />
     </Routes>
     
 

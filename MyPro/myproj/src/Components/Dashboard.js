@@ -1,26 +1,13 @@
-import '../Assert/Css/Dashboard.css'
-function Dashboard(){
-    return(
-        <>
-        <div className='main hv-100 flex-col'>
-            <div className='appbar hv-5 wv-100  flex theme-bg item-center '>
-                <div className='wv-90 flex theme-bg item-center justify-end'>
-                Appbar
-                </div>
-            </div>
-            <div className=' hv-95 flex flex-row justify-center items-center'>
-                <div className='leftbar wv-15 theme-bg hv-95'>
-                    Leftbar
-                </div>
-                <div className='wv-85 hv-95 flex justify-center'>
-                    <div className='content-wrapper'>
-                    MyContent
-                    </div>
-                        
-                </div>
-            </div>
-        </div>
-        </>
-    )
-}
+
+import React from 'react';
+
+const Dashboard = () => {
+  return (
+    <div>
+      <h2>Dashboard</h2>
+      <p>Welcome to the Dashboard!</p>
+    </div>
+  );
+};
+
 export default Dashboard;

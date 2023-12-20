@@ -4,30 +4,17 @@ import React, { useState } from 'react';
 import Carousel from './MyCarousel';
 import Footer from './Footer';
 import AdminDashboard from './AdminDashboard';
+import Description from './Description';
+import Petoptions from './Petoptions';
 
 function Home() {
-  const [isDashboardVisible, setIsDashboardVisible] = useState(false);
-
-  const toggleDashboard = () => {
-    setIsDashboardVisible(prevState => !prevState);
-  };
+  
 
   return (
     <>
-      {isDashboardVisible ? (
-        <div>
-          <AdminDashboard />
-        </div>
-      ) : (
-        <div>
-          <div>
             <Carousel />
-          </div>
-          <div>
+            <Petoptions/>
             <Footer />
-          </div>
-        </div>
-      )}
     </>
   );
 }

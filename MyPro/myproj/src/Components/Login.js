@@ -1,27 +1,64 @@
-import '../Assert/Css/login.css'
-import '../Assert/Css/App.css'
+import React, { useState } from 'react';
+import '../Assert/Css/login.css';
+import '../Assert/Css/App.css';
 import cat from '../Assert/img/cat.gif';
-import { Link } from 'react-router-dom';
-function Login(){
-    return(
-        <>
-        <div className='login-container'>
-        <form className="container1 shadow1" onSubmit="Login()" >
-        <Link to='/' className='cancel-link'>
-          <span className='cancel-symbol'>🗙</span>
-        </Link>
+import { Link,useNavigate } from 'react-router-dom';
 
-            <h3>LOGIN</h3>
-        <input type="text" name="" id="name" placeholder="User Name" className="name-input1"/>
-        <input type="password" name="" id="pass" placeholder="Password" className="name-input1"/>
-        <input type="submit" value="LOGIN" className ="button-input1"/>
-        <span className='sig'>Create an Account
-        <Link to='/signup'> Signup <img src={cat} className='catimg'></img></Link>  
-        </span>
+function Login() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate=useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    // Basic validation for username and password
+    if (username === 'vishwa' && password === '1234') {
+      // Successful login action
+     
+      navigate('/')
+      // Perform any additional actions here, like redirecting the user to another page
+    } else {
+      setError('Invalid username or password');
+    }
+  };
+
+  return (
+    <>
+      <div className='login-container'>
+        <form className='container1 shadow1' onSubmit={handleLogin}>
+          <Link to='/' className='cancel-link'>
+            {/* <span className='cancel-symbol'>🗙</span> */}
+          </Link>
+          <h3>LOGIN</h3>
+          <input
+            type='text'
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            placeholder='User Name'
+            className='name-input1'
+          />
+          <input
+            type='password'
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder='Password'
+            className='name-input1'
+          />
+          <input type='submit' value='LOGIN' className='button-input1' />
+          <span className='sig'>
+            Create an Account
+            <Link to='/signup'>
+              {' '}
+              Signup <img src={cat} alt='cat' className='catimg' />
+            </Link>
+          </span>
+          {error && <p className='error-message'>{error}</p>}
         </form>
-        </div>
-        </>
-    )
-
+      </div>
+    </>
+  );
 }
+
 export default Login;
