@@ -27,3 +27,7 @@
 ## Other Pets
 
 <figure><img src=".gitbook/assets/Other pets.png" alt=""><figcaption></figcaption></figure>
+
+## Footer
+
+<figure><img src=".gitbook/assets/Footer.png" alt=""><figcaption></figcaption></figure>
