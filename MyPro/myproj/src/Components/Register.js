@@ -7,8 +7,6 @@ function Register() {
         <>
             <div className='reg-container'>
                 <form className="container2 shadow2" onsubmit="register()" >
-                    {/* <Link to='/' className='cancel-link2'>🗙 */}
-                    {/* </Link> */}
                     <h3>Registration form</h3>
                     <input type="text" name="" id="names" placeholder="Name" className="name-input2" />
                     <input type="email" name="" id="Email" placeholder="Email" className="name-input2" />
@@ -16,7 +14,7 @@ function Register() {
                     <input type="password" name="" id="pass2" placeholder="Confirm Password" className="name-input2" />
                     <input type="number" name="" id="Mobile Number" placeholder="Phone" className="name-input2" />
                     <Link to='/'>
-                    <input type="submit" value="SUBMIT" className="button-input2" />
+                    <input type="submit" value="Submit" className="button-input2" />
                     </Link>
                 </form>
             </div>

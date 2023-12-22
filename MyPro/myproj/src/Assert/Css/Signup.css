@@ -27,12 +27,12 @@
 {
     width: 70%;
     padding: 1rem;
-    border: 2x solid #0a4870;
+    border: 2x solid white;
     font-weight:100;
 }
 .button-input3
 {
-    background-color:white;
+    color:white;
    width: 80%;
    padding: 0.6rem;
    border: none;
@@ -40,11 +40,10 @@
    outline: none;
    border-radius: 5rem;
    font-weight:100;
-   color: #0a4870;
+   background-color: #0a4870;
 }
 
 .signup{
-    color: white;
     text-decoration:underline;
 }
 .shadow3
@@ -64,5 +63,6 @@
     margin-top: -60px;
     margin-left: 23rem;
 }
-
-
+.login-text{
+    color: white;
+}

@@ -6,9 +6,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #b6b3bc;
     overflow-x: hidden;
 } 
+
 .navbar{
     display: flex;
     justify-content: flex-start;
@@ -69,10 +69,11 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 20px; 
+    margin-bottom: 10px;
   }
   
   .icon {
-    font-size: 24px; 
+    font-size: 50px; 
     margin: 0 50px;
     color: #0a4870; 
     

@@ -46,13 +46,7 @@ const Footer = () => {
                 <div className="footer-logo">
                   {/* <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" className="img-fluid" alt="logo" /></a> */}
                 </div>
-                <div className="footer-text">
-        <p>
-          We are passionate about pet adoption and providing loving homes for animals in need. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-      </div>
-
+                <div className="footer-text"></div>
                 <div className="footer-social-icon">
                   <span>Follow us</span>
                   <a href="#"><i className="fab fa-facebook-f facebook-bg"></i></a>

@@ -1,34 +1,26 @@
-/* Sidebar */
-.sidebar {
-    width: 250px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #f0f0f0;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .sidebar h2 {
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar ul li {
-    margin-bottom: 8px;
-    cursor: pointer;
-    color: #555;
-  }
-  
-  .sidebar ul li:hover {
-    color: #000;
-    font-weight: bold;
-  }
-  
+/* Sidebar.css */
+
+/* Style for the icon bar */
+.icon-bar {
+  position: fixed;
+  left: 20px; /* Adjust this value to change the distance from the left side */
+  top: 50%; /* Position icons vertically at the middle of the screen */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for individual icons */
+.icon-bar a {
+  margin-bottom: 10px; /* Adjust the spacing between icons */
+  color: #333; /* Icon color */
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for icons */
+.icon-bar a:hover {
+  color: #ff8800; /* Change color on hover */
+}

@@ -43,9 +43,10 @@
    font-weight:100;
    color: white;
 }
-
+.sig{
+    color: white;
+}
 .signup{
-    color: #0a4870;
     text-decoration:underline;
 }
 .catimg{

@@ -15,15 +15,14 @@ function App() {
   return (
     <>
         <NavBar />
-        {/* <Sidebar/> */}
     <Routes>
     <Route path='/' element={<Home/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path="/dashboard" component={Dashboard} />
-      <Route path='/dogadop' element={<Dogadap/>}/>
-      <Route path='/catadop' element={<Catadap/>}/>
+      <Route path='/dogadap' element={<Dogadap/>}/>
+      <Route path='/catadap' element={<Catadap/>}/>
       <Route path='/pets' element={<Pets/>}/>
       <Route path='/add' element={<AddPet />} />
     </Routes>
