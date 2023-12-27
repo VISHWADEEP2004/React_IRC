@@ -18,7 +18,6 @@ export default function Addpet() {
   };
 
   const handleImageChange = (e) => {
-    // Handle image file change and set it in the state (assuming input type is file)
     setData({ ...data, image: e.target.files[0] });
   };
 

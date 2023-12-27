@@ -12,13 +12,8 @@ function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-
-    // Basic validation for username and password
     if (username === 'vishwa' && password === '1234') {
-      // Successful login action
-     
       navigate('/')
-      // Perform any additional actions here, like redirecting the user to another page
     } else {
       setError('Invalid username or password');
     }
@@ -29,7 +24,6 @@ function Login() {
       <div className='login-container'>
         <form className='container1 shadow1' onSubmit={handleLogin}>
           <Link to='/' className='cancel-link'>
-            {/* <span className='cancel-symbol'>🗙</span> */}
           </Link>
           <h3>LOGIN</h3>
           <input

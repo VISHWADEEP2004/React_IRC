@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from './Footer';
 import '../Assert/Css/Dogadap.css';
 
 function Pets() {
-    const animals = [
+    const [animals, setAnimals] = useState([
         {
             type: 'bird',
             img: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFycm90fGVufDB8fDB8fHww",
@@ -113,7 +113,15 @@ function Pets() {
             dateAvailable: "Wednesday, 17th February 2024",
         },
 
-    ];
+    ]);
+    const [addedPet, setAddedPet] = useState(null);
+
+    const adoptPet = (index) => {
+        const adoptedPet = animals[index];
+        setAnimals((prevAnimals) => [...prevAnimals, adoptedPet]); 
+        setAddedPet(adoptedPet); 
+      };
+      
 
     return (
         <>
@@ -156,6 +164,12 @@ function Pets() {
                     </li>
                 ))}
             </ul>
+            {addedPet && (
+        <div>
+          <h2>Added Pet:</h2>
+          <p>Name: {addedPet.name}</p>
+        </div>
+      )}
             <Footer />
         </>
     );

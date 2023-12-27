@@ -1,19 +1,17 @@
 import axios from 'axios';
 
-const URL = 'http://localhost:3000'; 
+const URL = 'http://localhost:3000';
 
-const getPets = () => axios.get(`${URL}/pets`);
-const getPetById = (id) => axios.get(`${URL}/pets/${id}`);
-const addPet = (data) => axios.post(`${URL}/pets`, data);
-const editPet = (id, data) => axios.put(`${URL}/pets/${id}`, data);
-const deletePet = (id) => axios.delete(`${URL}/pets/${id}`);
-const getPetDetails = (id) => axios.get(`${URL}/pets/${id}`);
-const addNewPet = (petData) => axios.post(`${URL}/pets`, petData);
+const getuser = () => axios.get(`${URL}/users`);
+const getuserId = (id) => axios.get(`${URL}/users/${id}`);
+const addPet = (data) => axios.post(`${URL}/users`, data); // Changed function name to addPet
+const edituser = (id, data) => axios.put(`${URL}/users/${id}`, data);
+const deleteuser = (id) => axios.delete(`${URL}/users/${id}`);
 
 export {
-  getPets,
-  getPetById,
+  getuser,
+  getuserId,
   addPet,
-  editPet,
-  deletePet, getPetDetails, addNewPet
+  edituser,
+  deleteuser
 };

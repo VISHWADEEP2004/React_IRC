@@ -10,7 +10,6 @@ import Pets from "./Components/Pets";
 import Dashboard from "./Components/Dashboard";
 import Dogadap from "./Components/Dogadap";
 import AddPet from "./Components/Addpet";
-import Sidebar from "./Components/Sidebar";
 function App() {
   return (
     <>

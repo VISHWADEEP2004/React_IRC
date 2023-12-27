@@ -1,43 +1,80 @@
-// AddPet.js
-
 import React, { useState } from 'react';
-import { addPet } from '../Services/api';
 
-const AddPet = () => {
+const AddPet = ({ handleAddPet }) => {
   const [petData, setPetData] = useState({
     name: '',
     breed: '',
     age: '',
     location: '',
-    dateAvailable: ''
+    dateAvailable: '',
+    img: ''
   });
 
   const handleChange = (e) => {
     setPetData({ ...petData, [e.target.id]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      const res = await addPet(petData);
-      if (res.status === 200) {
-        alert('Pet added');
-      }
-    } catch (e) {
-      console.log(e);
-    }
+    handleAddPet(petData); 
+    setPetData({ 
+      name: '',
+      breed: '',
+      age: '',
+      location: '',
+      dateAvailable: '',
+      img: ''
+    });
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type='text' id='name' placeholder='Name' onChange={handleChange} />
-      <input type='text' id='breed' placeholder='Breed' onChange={handleChange} />
-      <input type='text' id='age' placeholder='Age' onChange={handleChange} />
-      <input type='text' id='location' placeholder='Location' onChange={handleChange} />
-      <input type='text' id='dateAvailable' placeholder='Date Available' onChange={handleChange} />
-      <button type='Submit'>Add Pet</button>
+      <input
+        type='text'
+        id='name'
+        placeholder='Name'
+        onChange={handleChange}
+        value={petData.name}
+      />
+      <input
+        type='text'
+        id='breed'
+        placeholder='Breed'
+        onChange={handleChange}
+        value={petData.breed}
+      />
+      <input
+        type='text'
+        id='age'
+        placeholder='Age'
+        onChange={handleChange}
+        value={petData.age}
+      />
+      <input
+        type='text'
+        id='location'
+        placeholder='Location'
+        onChange={handleChange}
+        value={petData.location}
+      />
+      <input
+        type='text'
+        id='dateAvailable'
+        placeholder='Date Available'
+        onChange={handleChange}
+        value={petData.dateAvailable}
+      />
+      <input
+        type='text'
+        id='img'
+        placeholder='Image URL'
+        onChange={handleChange}
+        value={petData.img}
+      />
+      <button type='submit'>Add Pet</button>
     </form>
   );
+  
 };
 
 export default AddPet;
